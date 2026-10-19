@@ -12,7 +12,7 @@ export interface AiResult {
 export function AiAnswer({ result }: { result: AiResult }) {
   return (
     <div>
-      <p className="text-[13px] leading-relaxed text-ink">
+      <p className="text-[16px] leading-relaxed text-ink">
         {result.sentences.map((s, i) => (
           <span key={i}>
             {/[.!?]$/.test(s.text) ? s.text : `${s.text}.`}
@@ -21,7 +21,7 @@ export function AiAnswer({ result }: { result: AiResult }) {
         ))}
       </p>
       {result.dropped.length > 0 && (
-        <details className="mt-3 rounded-[9px] border border-line bg-sunken px-3 py-2 text-[11px] text-ink-3">
+        <details className="mt-4 rounded-lg border border-line bg-sunken px-4 py-3 text-[13px] text-ink-3">
           <summary className="cursor-pointer font-semibold text-ink-2">
             Number guard removed {result.dropped.length} {result.dropped.length === 1 ? "sentence" : "sentences"}
           </summary>

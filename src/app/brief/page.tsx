@@ -54,7 +54,7 @@ export default async function BriefPage({ searchParams }: { searchParams: SP }) 
             <li key={e}>{e}</li>
           ))}
         </ul>
-        <Link href="/" className="mt-6 inline-flex rounded-[9px] bg-accent px-4 py-2.5 text-sm font-semibold text-accent-ink">
+        <Link href="/" className="mt-6 inline-flex rounded-full bg-ink px-5 py-2.5 text-[15px] font-medium text-accent-ink">
           Back to the form
         </Link>
       </Container>
@@ -84,7 +84,7 @@ export default async function BriefPage({ searchParams }: { searchParams: SP }) 
           </>
         }
       />
-      <p className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px] text-ink-3">
+      <p className="flex flex-wrap items-center gap-x-4 gap-y-1 text-[13px] text-ink-3">
         <span>
           <span aria-hidden>✓</span> verified source
         </span>
@@ -94,7 +94,7 @@ export default async function BriefPage({ searchParams }: { searchParams: SP }) 
       </p>
 
       {/* Disclosure */}
-      <div className="mt-4 rounded-[12px] border border-warn/25 bg-warn-soft px-4 py-3 text-xs leading-relaxed text-warn">
+      <div className="mt-5 rounded-[16px] bg-block-cream px-5 py-4 text-[15px] leading-relaxed text-ink">
         <strong className="font-semibold">Disclosure:</strong> this concept is pitched to Flexiple, which sells GCC setup and managed teams.
         Its option appears below with the same rules as every other model, including when it is the wrong choice.
       </div>
@@ -110,13 +110,13 @@ export default async function BriefPage({ searchParams }: { searchParams: SP }) 
           <Cite claims={[top.swe, top.senior]} label="Flexiple talent data" /> a year, about{" "}
           <strong className="tabular">₹{top.annualPayrollCrore} crore</strong> in base salaries for {input.headcount} people, with{" "}
           <strong className="tabular">{top.sectorPeers}</strong> {input.sector} centres already in the city
-          <a href={PEER_SOURCE.url} target="_blank" rel="noopener noreferrer nofollow" className="ml-1 text-xs text-accent underline underline-offset-2">
+          <a href={PEER_SOURCE.url} target="_blank" rel="noopener noreferrer nofollow" className="ml-1 text-sm text-ink underline underline-offset-2">
             (Flexiple directory)
           </a>
           .
         </p>
         {cheapest.id !== top.id && (
-          <p className="mt-3 rounded-[9px] border border-line bg-sunken px-3 py-2 text-sm text-ink-2">
+          <p className="mt-4 rounded-[16px] bg-block-mint px-5 py-3 text-[15px] text-ink">
             Lowest payroll is <strong>{cheapest.name}</strong> at <span className="tabular">₹{cheapest.annualPayrollCrore} crore</span> a year (
             <span className="tabular">₹{Math.round((top.annualPayrollCrore - cheapest.annualPayrollCrore) * 10) / 10} crore</span> less).{" "}
             {top.name} ranks higher on {whyTop(top, cheapest)}. See the score breakdown below.

@@ -35,8 +35,8 @@ export function Cite({ claims, label }: { claims: Claim[]; label?: string }) {
         aria-expanded={open}
         aria-controls={id}
         onClick={() => setOpen((o) => !o)}
-        className={`ml-1 inline-flex items-center gap-1 rounded-full border px-2 py-0.5 text-[11px] font-medium leading-4 transition-colors ${
-          vendor ? "border-warn/40 bg-warn-soft text-warn hover:border-warn" : "border-line-strong bg-sunken text-ink-2 hover:border-accent hover:text-accent"
+        className={`ml-1 inline-flex items-center gap-1 rounded-full border px-2 py-0.5 text-[12px] font-medium leading-4 transition-colors ${
+          vendor ? "border-transparent bg-block-cream text-warn hover:border-warn" : "border-line bg-sunken text-ink-2 hover:border-ink hover:text-ink"
         }`}
       >
         <span aria-hidden>{vendor ? "◆" : "✓"}</span>
@@ -54,7 +54,7 @@ export function Cite({ claims, label }: { claims: Claim[]; label?: string }) {
             <span key={c.id} className="block border-b border-line py-2 first:pt-0 last:border-0 last:pb-0">
               <span className="block text-ink">“{c.quote}”</span>
               <span className="mt-1.5 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-ink-3">
-                <a href={c.sourceUrl} target="_blank" rel="noopener noreferrer nofollow" className="font-medium text-accent underline underline-offset-2">
+                <a href={c.sourceUrl} target="_blank" rel="noopener noreferrer nofollow" className="font-medium text-ink underline underline-offset-2">
                   {c.publisher}
                   <span className="sr-only"> (opens in a new tab)</span>
                 </a>

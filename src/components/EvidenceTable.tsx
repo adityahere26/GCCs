@@ -41,7 +41,7 @@ export function EvidenceTable({ rows }: { rows: Claim[] }) {
               type="button"
               aria-pressed={filter === f.id}
               onClick={() => setFilter(f.id)}
-              className="rounded-full border border-line-strong px-3 py-1.5 text-sm text-ink-2 aria-pressed:border-accent aria-pressed:bg-accent-soft aria-pressed:text-accent"
+              className="rounded-full border border-line-strong px-3 py-1.5 text-sm text-ink-2 aria-pressed:border-ink aria-pressed:bg-ink aria-pressed:text-accent-ink"
             >
               {f.label}
             </button>
@@ -83,7 +83,7 @@ export function EvidenceTable({ rows }: { rows: Claim[] }) {
                   {r.probe && <span className="rounded-full bg-sunken px-2 py-0.5 font-medium text-ink-2">test probe</span>}
                   <span className="text-ink-3">{REASON_LABEL[r.reason] ?? r.reason}</span>
                   <span className="text-ink-3">·</span>
-                  <a href={r.sourceUrl} target="_blank" rel="noopener noreferrer nofollow" className="text-accent underline underline-offset-2">
+                  <a href={r.sourceUrl} target="_blank" rel="noopener noreferrer nofollow" className="text-ink underline underline-offset-2">
                     {r.publisher}
                     <span className="sr-only"> (opens in a new tab)</span>
                   </a>

@@ -1,14 +1,14 @@
 import Link from "next/link";
 import { Cite } from "@/components/Cite";
-import { Badge, btn, btnPrimary, Card, CardHead, PageHead, Stat } from "@/components/ui";
+import { Badge, Block, btn, btnPrimary, Card, CardHead, PageHead, Stat } from "@/components/ui";
 import { CITIES, LIMITS, OWNERSHIP, PEER_SOURCE, PEER_TOTAL, PRIORITIES, SECTORS, TIMELINES, peerTotals } from "@/lib/engine";
 import { evaluation, fact, show } from "@/lib/ledger";
 import { EXAMPLE_BRIEF } from "@/lib/site";
 
 const field =
-  "mt-1.5 block w-full rounded-[9px] border border-line bg-surface px-3 py-2.5 text-[13px] text-ink placeholder:text-ink-3 focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20";
-const labelCls = "block text-xs font-semibold text-ink";
-const hint = "mt-1 text-[11px] text-ink-3";
+  "mt-2 block w-full rounded-lg border border-line bg-surface px-3.5 py-3 text-[16px] text-ink placeholder:text-ink-3 focus:border-ink focus:outline-none focus:ring-2 focus:ring-ink/15";
+const labelCls = "block text-[15px] font-medium text-ink";
+const hint = "mt-1.5 text-[13px] text-ink-3";
 
 export default function Home() {
   const talent = CITIES.map((c) => ({ name: c.name, pool: fact(c.talent.pool), swe: fact(c.talent.swe) })).sort((a, b) => (b.pool.num ?? 0) - (a.pool.num ?? 0));
@@ -35,18 +35,18 @@ export default function Home() {
         }
       />
 
-      <div className="mb-[18px] grid grid-cols-2 gap-2.5 md:gap-[15px] lg:grid-cols-4">
-        <Stat icon="✓" label="Facts verified" value={evaluation.verified} foot={<><b className="text-accent-text">{evaluation.probesCaught}/{evaluation.probes}</b> fabricated test facts caught</>} />
+      <div className="mb-6 grid grid-cols-2 gap-3 md:gap-4 lg:grid-cols-4">
+        <Stat icon="✓" label="Facts verified" value={evaluation.verified} foot={<><b>{evaluation.probesCaught}/{evaluation.probes}</b> fabricated test facts caught</>} />
         <Stat icon="◎" label="Sources read" value={evaluation.sourcesFetched} foot={`of ${evaluation.sources} attempted; blocked ones are excluded`} />
         <Stat icon="⌖" label="Metros compared" value={CITIES.length} foot="Talent, pay, peers and incentives" />
         <Stat icon="◫" label="Verified GCCs mapped" value={PEER_TOTAL} foot="From Flexiple's public directory" />
       </div>
 
-      <div className="mb-[18px] grid gap-[17px] xl:grid-cols-[minmax(0,1.55fr)_minmax(310px,1fr)]">
+      <div className="mb-6 grid gap-6 xl:grid-cols-[minmax(0,1.5fr)_minmax(320px,1fr)]">
         <form id="plan" action="/brief" method="get" aria-labelledby="form-title">
-          <Card className="p-5 md:p-6">
+          <Card className="p-6 md:p-8">
             <CardHead title={<span id="form-title">Plan your India centre</span>} sub="Takes under a minute. All fields except company name are required." aside={<Badge tone="accent">Free · no sign-up</Badge>} />
-            <div className="grid gap-4 sm:grid-cols-2">
+            <div className="grid gap-5 sm:grid-cols-2">
               <div>
                 <label htmlFor="c" className={labelCls}>
                   Company name <span className="font-normal text-ink-3">(optional)</span>
@@ -86,13 +86,13 @@ export default function Home() {
               </div>
               <fieldset className="sm:col-span-2">
                 <legend className={labelCls}>What matters most?</legend>
-                <div className="mt-1.5 grid grid-cols-2 gap-2 lg:grid-cols-4">
+                <div className="mt-2 grid grid-cols-2 gap-2 lg:grid-cols-4">
                   {Object.entries(PRIORITIES).map(([k, v], i) => (
                     <label
                       key={k}
-                      className="flex cursor-pointer items-center gap-2 rounded-[9px] border border-line px-3 py-2.5 text-xs has-[:checked]:border-accent has-[:checked]:bg-accent-soft has-[:checked]:text-accent-text has-[:focus-visible]:ring-2 has-[:focus-visible]:ring-accent/40"
+                      className="flex cursor-pointer items-center gap-2 rounded-full border border-line px-4 py-2.5 text-[14px] has-[:checked]:border-ink has-[:checked]:bg-ink has-[:checked]:text-accent-ink has-[:focus-visible]:ring-2 has-[:focus-visible]:ring-ink/40"
                     >
-                      <input type="radio" name="p" value={k} defaultChecked={i === 0} className="accent-[var(--accent)]" />
+                      <input type="radio" name="p" value={k} defaultChecked={i === 0} className="sr-only" />
                       {v.label}
                     </label>
                   ))}
@@ -123,8 +123,8 @@ export default function Home() {
                 </select>
               </div>
             </div>
-            <div className="mt-6 flex flex-col gap-3 border-t border-line pt-5 sm:flex-row sm:items-center sm:justify-between">
-              <p className="max-w-md text-[11px] leading-relaxed text-ink-3">
+            <div className="mt-8 flex flex-col gap-4 border-t border-line pt-6 sm:flex-row sm:items-center sm:justify-between">
+              <p className="max-w-md text-[13px] leading-relaxed text-ink-3">
                 Nothing you enter is stored. Answers go in the brief&apos;s web address so it can be built and shared, so anyone you send the link to
                 sees them.{" "}
                 <Link href="/privacy" className="underline underline-offset-2">
@@ -139,54 +139,51 @@ export default function Home() {
         </form>
 
         <div className="flex flex-col gap-[17px]">
-          <div className="relative overflow-hidden rounded-[14px] bg-gradient-to-br from-[#05304d] to-[#0a5a8a] p-5 text-white">
-            <span aria-hidden className="pointer-events-none absolute -top-6 right-2 text-[90px] text-white/5">
-              ✧
-            </span>
-            <p className="text-[10px] font-extrabold uppercase tracking-[0.13em] text-[#90e0ef]">✧ Ready-made scenario</p>
-            <h3 className="mt-2 max-w-xs text-[17px] font-semibold leading-snug">Where should a 200-person BFSI centre set up?</h3>
-            <p className="mt-2 max-w-sm text-[11px] leading-relaxed text-[#cfe6f2]">
+          <Block tone="navy" className="p-7 md:p-8">
+            <p className="eyebrow text-[12px] text-white/70">Ready-made scenario</p>
+            <h3 className="mt-3 max-w-xs text-[26px] font-[340] leading-[1.2] tracking-[-0.02em]">Where should a 200-person BFSI centre set up?</h3>
+            <p className="mt-3 max-w-sm text-[15px] leading-relaxed text-white/80">
               Six metros scored on talent, pay, peer centres and state incentives, with setup models compared and every number cited.
             </p>
-            <div className="mt-4 flex items-center justify-between gap-3">
-              <span className="text-[10px] text-[#b3d3e4]">4 factors · 6 cities · 4 setup models</span>
-              <Link href={EXAMPLE_BRIEF} prefetch={false} className="rounded-[9px] bg-white px-3 py-2 text-xs font-semibold text-[#05304d] hover:bg-[#e0f4fb]">
+            <div className="mt-6 flex flex-wrap items-center justify-between gap-3">
+              <span className="eyebrow text-[11px] text-white/70">4 factors · 6 cities · 4 setup models</span>
+              <Link href={EXAMPLE_BRIEF} prefetch={false} className="rounded-full bg-white px-5 py-2.5 text-[15px] font-medium text-ink hover:bg-block-lime">
                 Open brief ↗
               </Link>
             </div>
-          </div>
+          </Block>
 
-          <Card className="p-5">
+          <Block tone="cream" className="p-6 md:p-7">
             <CardHead
               title="How many GCCs does India have?"
               sub="It depends who you ask, and what they count."
               aside={
-                <Link href="/counts" className="shrink-0 text-[11px] font-bold text-accent-text hover:underline">
+                <Link href="/counts" className="shrink-0 rounded-full bg-ink px-3 py-1 text-[13px] font-medium text-accent-ink">
                   Why →
                 </Link>
               }
             />
-            <ul className="divide-y divide-line">
+            <ul className="divide-y divide-black/10">
               {counts.map((c) => (
-                <li key={c.id} className="flex items-center justify-between gap-3 py-2.5 first:pt-0 last:pb-0">
-                  <span className="min-w-0 text-xs text-ink-2">{c.field}</span>
-                  <span className="tabular shrink-0 text-[13px] font-bold">
+                <li key={c.id} className="flex items-center justify-between gap-3 py-3 first:pt-0 last:pb-0">
+                  <span className="min-w-0 text-[14px] text-ink-2">{c.field}</span>
+                  <span className="tabular shrink-0 text-[16px] font-semibold">
                     {show(c)}
                     <Cite claims={[c]} label={c.publisher} />
                   </span>
                 </li>
               ))}
             </ul>
-          </Card>
+          </Block>
         </div>
       </div>
 
-      <div className="grid gap-[17px] lg:grid-cols-2">
-        <Card className="p-5">
+      <div className="grid gap-6 lg:grid-cols-2">
+        <Card className="p-6 md:p-8">
           <CardHead title="Talent pool by metro" sub="Professionals tracked in Flexiple's published talent data, Aug 2026" aside={<Badge tone="sky">Measured</Badge>} />
           <ul className="flex flex-col gap-3">
             {talent.map((t) => (
-              <li key={t.name} className="grid grid-cols-[80px_1fr_auto] items-center gap-2.5 text-[11px] md:grid-cols-[95px_1fr_auto]">
+              <li key={t.name} className="grid grid-cols-[84px_1fr_auto] items-center gap-3 text-[14px] md:grid-cols-[100px_1fr_auto]">
                 <span className="text-ink-2">{t.name}</span>
                 <span className="h-2 overflow-hidden rounded-full bg-chart-track" aria-hidden>
                   <span className="block h-full rounded-full bg-chart" style={{ width: `${((t.pool.num ?? 0) / maxPool) * 100}%` }} />
@@ -200,19 +197,19 @@ export default function Home() {
           </ul>
         </Card>
 
-        <Card className="p-5">
+        <Card className="p-6 md:p-8">
           <CardHead
             title="Verified GCCs by metro"
             sub="Centres in Flexiple's directory with a presence in each city"
             aside={
-              <a href={PEER_SOURCE.url} target="_blank" rel="noopener noreferrer nofollow" className="shrink-0 text-[11px] font-bold text-accent-text hover:underline">
+              <a href={PEER_SOURCE.url} target="_blank" rel="noopener noreferrer nofollow" className="shrink-0 rounded-full border border-line px-3 py-1 text-[13px] font-medium hover:bg-sunken">
                 Source ↗
               </a>
             }
           />
           <ul className="flex flex-col gap-3">
             {peers.map((p) => (
-              <li key={p.name} className="grid grid-cols-[80px_1fr_36px] items-center gap-2.5 text-[11px] md:grid-cols-[95px_1fr_38px]">
+              <li key={p.name} className="grid grid-cols-[84px_1fr_40px] items-center gap-3 text-[14px] md:grid-cols-[100px_1fr_44px]">
                 <span className="text-ink-2">{p.name}</span>
                 <span className="h-2 overflow-hidden rounded-full bg-chart-track" aria-hidden>
                   <span className="block h-full rounded-full bg-chart" style={{ width: `${(p.total / maxPeers) * 100}%` }} />
@@ -221,22 +218,25 @@ export default function Home() {
               </li>
             ))}
           </ul>
-          <p className="mt-4 text-[10px] text-ink-3">A centre with offices in several cities is counted in each, so rows add up to more than {PEER_TOTAL}.</p>
+          <p className="mt-5 text-[13px] text-ink-3">A centre with offices in several cities is counted in each, so rows add up to more than {PEER_TOTAL}.</p>
         </Card>
       </div>
 
-      <div className="mt-8 grid gap-6 sm:grid-cols-3">
-        {[
-          { t: "Sourced, not summarised", d: "AI extracts each fact with the exact sentence it came from. Code checks that sentence exists in the source before anything is shown." },
-          { t: "Disagreements shown", d: "When reports disagree, you see every number and why they differ, instead of one confident average." },
-          { t: "Honest about its maker", d: "The concept is pitched to a company that sells GCC services. The brief says so, and tells you when that service is the wrong choice." },
-        ].map((x) => (
-          <div key={x.t}>
-            <h3 className="text-[13px] font-semibold">{x.t}</h3>
-            <p className="mt-1.5 text-xs leading-relaxed text-ink-3">{x.d}</p>
-          </div>
-        ))}
-      </div>
+      <Block tone="lime" className="mt-6 p-8 md:p-12">
+        <p className="eyebrow text-[12px] text-ink/70">Why it is different</p>
+        <div className="mt-6 grid gap-8 md:grid-cols-3">
+          {[
+            { t: "Sourced, not summarised", d: "AI extracts each fact with the exact sentence it came from. Code checks that sentence exists in the source before anything is shown." },
+            { t: "Disagreements shown", d: "When reports disagree, you see every number and why they differ, instead of one confident average." },
+            { t: "Honest about its maker", d: "The concept is pitched to a company that sells GCC services. The brief says so, and tells you when that service is the wrong choice." },
+          ].map((x) => (
+            <div key={x.t}>
+              <h3 className="text-[22px] font-semibold tracking-[-0.02em]">{x.t}</h3>
+              <p className="mt-2 text-[16px] leading-relaxed text-ink-2">{x.d}</p>
+            </div>
+          ))}
+        </div>
+      </Block>
     </>
   );
 }

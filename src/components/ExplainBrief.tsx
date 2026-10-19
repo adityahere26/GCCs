@@ -15,22 +15,22 @@ export function ExplainBrief({ query }: { query: string }) {
   }
 
   return (
-    <div className="mt-6 rounded-[14px] border border-line bg-gradient-to-br from-[#e0f4fb] to-white p-5">
+    <div className="mt-6 rounded-[24px] bg-block-lilac p-6 md:p-8">
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div>
-          <p className="text-[10px] font-extrabold uppercase tracking-[0.13em] text-accent-text">✧ AI summary · Groq</p>
-          <p className="mt-1 text-xs text-ink-3">Written from this brief&apos;s verified facts only. Numbers are checked before display.</p>
+          <p className="eyebrow text-[12px] text-ink/70">AI summary · Groq</p>
+          <p className="mt-1 text-[15px] text-ink-2">Written from this brief&apos;s verified facts only. Numbers are checked before display.</p>
         </div>
         {state.s !== "done" && (
-          <button type="button" onClick={run} disabled={state.s === "loading"} className="rounded-[9px] bg-accent px-4 py-2.5 text-xs font-semibold text-accent-ink hover:opacity-90 disabled:opacity-60">
+          <button type="button" onClick={run} disabled={state.s === "loading"} className="rounded-full bg-ink px-5 py-2.5 text-[15px] font-medium text-accent-ink hover:opacity-85 disabled:opacity-60">
             {state.s === "loading" ? "Writing…" : state.s === "error" ? "Try again" : "Explain this brief"}
           </button>
         )}
       </div>
       <div aria-live="polite">
-        {state.s === "loading" && <p className="mt-4 animate-pulse text-[13px] text-ink-3">Reading the brief and its sources…</p>}
+        {state.s === "loading" && <p className="mt-5 animate-pulse text-[16px] text-ink-2">Reading the brief and its sources…</p>}
         {state.s === "error" && (
-          <p role="alert" className="mt-4 text-[13px] text-bad">
+          <p role="alert" className="mt-5 text-[16px] text-bad">
             {state.error}
           </p>
         )}

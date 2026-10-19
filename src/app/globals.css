@@ -1,39 +1,40 @@
 @import "tailwindcss";
 
-/* Maldives ocean theme, always light (no dark mode): deep-ocean sidebar, aqua highlights. */
+/* Design system: see DESIGN.md (Figma-inspired). Monochrome chrome, pill CTAs,
+   hairline borders, no shadows, pastel colour blocks for story sections. Always light. */
 :root {
-  --bg: #f3f9fc;
+  --bg: #ffffff;
   --surface: #ffffff;
-  --sunken: #eef6fa;
-  --line: #dceaf1;
-  --line-strong: #c6dbe6;
-  --ink: #0f2433;
-  --ink-2: #36505f;
-  --ink-3: #56707e;
-  --accent: #0077b6;
+  --sunken: #f7f7f5;
+  --line: #e6e6e6;
+  --line-strong: #d4d4d4;
+  --ink: #000000;
+  --ink-2: #1f1f1f;
+  --ink-3: #525252;
+  --accent: #000000;
   --accent-ink: #ffffff;
-  --accent-soft: #e0f4fb;
-  --accent-text: #006a9e;
-  --sky: #0369a1;
-  --sky-soft: #e6f3fa;
-  --chart: #0aa2c8;
-  --chart-track: #e5f1f6;
-  --ok: #17694a;
-  --ok-soft: #e6f5ee;
-  --warn: #8a5600;
-  --warn-soft: #fdf3e1;
-  --bad: #a1271b;
-  --bad-soft: #fbe9e6;
-  --side: #05304d;
-  --side-2: #0b4166;
-  --side-line: #164f75;
-  --side-ink: #b8d4e3;
-  --side-dim: #7fa3b8;
-  --side-active: #7fdcf5;
-  --shadow: 0 8px 26px rgba(5, 48, 77, 0.06);
-  --focus: #0077b6;
+  --accent-soft: #dceeb1;
+  --accent-text: #000000;
+  --sky: #1f1d3d;
+  --sky-soft: #c5b0f4;
+  --chart: #000000;
+  --chart-track: #f1f1f1;
+  --ok: #136c33;
+  --ok-soft: #c8e6cd;
+  --warn: #6e4a00;
+  --warn-soft: #f4ecd6;
+  --bad: #9b1c1c;
+  --bad-soft: #efd4d4;
+  --block-lime: #dceeb1;
+  --block-lilac: #c5b0f4;
+  --block-cream: #f4ecd6;
+  --block-mint: #c8e6cd;
+  --block-pink: #efd4d4;
+  --block-coral: #f3c9b6;
+  --block-navy: #1f1d3d;
+  --shadow: none;
+  --focus: #000000;
 }
-
 
 @theme inline {
   --color-bg: var(--bg);
@@ -58,15 +59,16 @@
   --color-warn-soft: var(--warn-soft);
   --color-bad: var(--bad);
   --color-bad-soft: var(--bad-soft);
-  --color-side: var(--side);
-  --color-side-2: var(--side-2);
-  --color-side-line: var(--side-line);
-  --color-side-ink: var(--side-ink);
-  --color-side-dim: var(--side-dim);
-  --color-side-active: var(--side-active);
+  --color-block-lime: var(--block-lime);
+  --color-block-lilac: var(--block-lilac);
+  --color-block-cream: var(--block-cream);
+  --color-block-mint: var(--block-mint);
+  --color-block-pink: var(--block-pink);
+  --color-block-coral: var(--block-coral);
+  --color-block-navy: var(--block-navy);
   --shadow-card: var(--shadow);
   --font-sans: var(--font-inter);
-  --font-mono: var(--font-geist-mono);
+  --font-mono: var(--font-mono-face);
 }
 
 html {
@@ -78,19 +80,34 @@ body {
   background: var(--bg);
   color: var(--ink);
   font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.45;
+  font-weight: 340;
+  letter-spacing: -0.01em;
+  font-feature-settings: "kern";
   -webkit-font-smoothing: antialiased;
 }
 
 :focus-visible {
   outline: 2px solid var(--focus);
   outline-offset: 2px;
-  border-radius: 6px;
+  border-radius: 8px;
 }
 
 ::selection {
   background: var(--accent-soft);
+}
+
+.eyebrow {
+  font-family: var(--font-mono-face), ui-monospace, monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 400;
+}
+
+strong,
+b {
+  font-weight: 560;
 }
 
 .tabular {

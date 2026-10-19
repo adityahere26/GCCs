@@ -30,7 +30,7 @@ export default function MethodPage() {
         {STEPS.map((s) => (
           <li key={s.n}>
             <Card className="h-full p-4">
-              <span className="tabular grid size-8 place-items-center rounded-[9px] bg-accent-soft text-sm font-bold text-accent-text">{s.n}</span>
+              <span className="tabular grid size-9 place-items-center rounded-full bg-block-lime text-sm font-medium">{s.n}</span>
               <h2 className="mt-3 font-medium">{s.t}</h2>
               <p className="mt-1.5 text-sm leading-relaxed text-ink-3">{s.d}</p>
             </Card>
@@ -84,7 +84,7 @@ export default function MethodPage() {
             "No ranking, placement or data edit can be bought. Vendor-sourced numbers are labelled as estimates.",
             "Where sources disagree, all values are shown. Nothing is averaged away.",
           ].map((t) => (
-            <li key={t} className="rounded-[14px] border border-line bg-surface p-4 shadow-card">
+            <li key={t} className="rounded-[24px] border border-line bg-surface p-5 text-[15px]">
               {t}
             </li>
           ))}
@@ -96,7 +96,7 @@ export default function MethodPage() {
         <p className="max-w-2xl text-sm leading-relaxed text-ink-2">
           Talent and pay medians come from Flexiple&apos;s published statistics page, standing in for the private talent graph a production version
           would use. Peer counts come from Flexiple&apos;s public directory. Policy terms come from law-firm and consultancy summaries, not gazette
-          text. Cost and timeline figures mostly come from vendors. Full list on the <Link href="/evidence" className="text-accent-text underline underline-offset-2">evidence ledger</Link>.
+          text. Cost and timeline figures mostly come from vendors. Full list on the <Link href="/evidence" className="text-ink underline underline-offset-2">evidence ledger</Link>.
         </p>
       </section>
     </Container>

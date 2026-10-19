@@ -24,9 +24,9 @@ export default function EvidencePage() {
       />
       <dl className="grid grid-cols-2 gap-2.5 md:gap-[15px] lg:grid-cols-4">
         {stats.map((s) => (
-          <div key={s.k} className="rounded-[14px] border border-line bg-surface p-4 shadow-card">
-            <dt className="text-xs text-ink-3">{s.k}</dt>
-            <dd className="tabular mt-2 text-[27px] font-bold tracking-[-0.03em]">{s.v}</dd>
+          <div key={s.k} className="rounded-[24px] border border-line bg-surface p-5">
+            <dt className="eyebrow text-[11px] text-ink-3">{s.k}</dt>
+            <dd className="tabular mt-3 text-[40px] font-[340] leading-none tracking-[-0.04em]">{s.v}</dd>
           </div>
         ))}
       </dl>

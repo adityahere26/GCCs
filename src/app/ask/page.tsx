@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { AskBox } from "@/components/AskBox";
-import { Card, CardHead, PageHead } from "@/components/ui";
+import { Block, Card, CardHead, PageHead } from "@/components/ui";
 import { evaluation } from "@/lib/ledger";
 
 export const metadata: Metadata = {
@@ -24,23 +24,23 @@ export default function AskPage() {
         sub={`A real language model, kept on a short leash: it can only use the ${evaluation.verified} verified facts in the ledger, and code checks its numbers before you see them.`}
       />
       <div className="grid gap-4 lg:grid-cols-[minmax(0,1.25fr)_minmax(280px,0.75fr)]">
-        <Card className="p-5">
+        <Card className="p-6 md:p-8">
           <AskBox />
         </Card>
-        <Card className="h-fit p-5">
+        <Block tone="cream" className="h-fit p-6 md:p-8">
           <CardHead title="How answers are made" sub="Built for decisions, not open-ended chat" />
-          <ol className="divide-y divide-line">
+          <ol className="divide-y divide-black/10">
             {STEPS.map((s, i) => (
               <li key={s.t} className="flex gap-3 py-3 first:pt-0 last:pb-0">
-                <span className="tabular grid size-8 shrink-0 place-items-center rounded-[8px] bg-accent-soft text-xs font-bold text-accent-text">{i + 1}</span>
+                <span className="tabular grid size-8 shrink-0 place-items-center rounded-full bg-block-lime text-sm font-medium">{i + 1}</span>
                 <div>
-                  <p className="text-xs font-semibold">{s.t}</p>
-                  <p className="mt-0.5 text-[11px] leading-relaxed text-ink-3">{s.d}</p>
+                  <p className="text-[15px] font-semibold">{s.t}</p>
+                  <p className="mt-1 text-[14px] leading-relaxed text-ink-3">{s.d}</p>
                 </div>
               </li>
             ))}
           </ol>
-        </Card>
+        </Block>
       </div>
     </>
   );

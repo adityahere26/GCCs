@@ -31,29 +31,29 @@ export function AskBox() {
   return (
     <div className="flex min-h-[520px] flex-col">
       <div className="flex items-center gap-3 border-b border-line pb-4">
-        <span aria-hidden className="grid size-[38px] place-items-center rounded-[12px] bg-gradient-to-br from-[#0077b6] to-[#00b4d8] text-lg text-white">
+        <span aria-hidden className="grid size-10 place-items-center rounded-full bg-block-lilac text-lg text-ink">
           ✧
         </span>
         <div>
-          <h2 className="text-[14px] font-semibold">Ground Truth analyst</h2>
-          <p className="text-[10px] text-ink-3">
+          <h2 className="text-[17px] font-semibold">Ground Truth analyst</h2>
+          <p className="text-[13px] text-ink-3">
             <span className="text-ok">●</span> Answers only from verified facts · powered by Groq
           </p>
         </div>
       </div>
 
       <div className="flex flex-1 flex-col gap-4 py-5" aria-live="polite">
-        <div className="max-w-[88%] self-start rounded-[12px] border border-line bg-sunken px-4 py-3 text-[13px] leading-relaxed">
+        <div className="max-w-[88%] self-start rounded-[20px] bg-sunken px-5 py-4 text-[16px] leading-relaxed">
           Ask about cities, pay, state incentives, setup models or GCC counts. I can only use facts from the evidence ledger, and every number I write is
           checked against its source before you see it.
         </div>
         {turns.map((t, i) => (
           <div key={i} className="flex flex-col gap-2">
-            <div className="max-w-[85%] self-end rounded-[12px] bg-accent px-4 py-2.5 text-[13px] text-accent-ink">{t.q}</div>
-            <div className="max-w-[92%] self-start rounded-[12px] border border-line bg-surface px-4 py-3 shadow-card">
-              {t.state === "loading" && <p className="animate-pulse text-[13px] text-ink-3">Reading the evidence…</p>}
+            <div className="max-w-[85%] self-end rounded-[20px] bg-ink px-5 py-3 text-[16px] text-accent-ink">{t.q}</div>
+            <div className="max-w-[92%] self-start rounded-[20px] border border-line bg-surface px-5 py-4">
+              {t.state === "loading" && <p className="animate-pulse text-[16px] text-ink-3">Reading the evidence…</p>}
               {t.state === "error" && (
-                <p role="alert" className="text-[13px] text-bad">
+                <p role="alert" className="text-[16px] text-bad">
                   {t.error}
                 </p>
               )}
@@ -80,21 +80,21 @@ export function AskBox() {
           onChange={(e) => setQ(e.target.value)}
           maxLength={300}
           placeholder="Ask about GCC cities, pay, incentives or setup models…"
-          className="min-w-0 flex-1 rounded-[9px] border border-line bg-surface px-3 py-3 text-[13px] focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20"
+          className="min-w-0 flex-1 rounded-full border border-line bg-surface px-5 py-3 text-[16px] focus:border-ink focus:outline-none focus:ring-2 focus:ring-ink/15"
         />
-        <button type="submit" disabled={busy || q.trim().length < 3} className="rounded-[9px] bg-accent px-4 text-sm font-semibold text-accent-ink disabled:opacity-50">
+        <button type="submit" disabled={busy || q.trim().length < 3} className="grid size-12 shrink-0 place-items-center rounded-full bg-ink text-lg text-accent-ink disabled:opacity-40">
           <span aria-hidden>↑</span>
           <span className="sr-only">Send</span>
         </button>
       </form>
       <div className="mt-3 flex flex-wrap gap-2">
         {SUGGESTIONS.map((s) => (
-          <button key={s} type="button" disabled={busy} onClick={() => ask(s)} className="rounded-[8px] border border-line bg-surface px-2.5 py-2 text-left text-[11px] text-ink-2 hover:bg-sunken disabled:opacity-50">
+          <button key={s} type="button" disabled={busy} onClick={() => ask(s)} className="rounded-full border border-line bg-surface px-4 py-2 text-left text-[13px] text-ink-2 hover:bg-sunken disabled:opacity-50">
             {s}
           </button>
         ))}
       </div>
-      <p className="mt-3 text-[10px] text-ink-3">Your question is sent to Groq to generate the answer. Do not include personal or confidential information.</p>
+      <p className="mt-4 text-[13px] text-ink-3">Your question is sent to Groq to generate the answer. Do not include personal or confidential information.</p>
     </div>
   );
 }
