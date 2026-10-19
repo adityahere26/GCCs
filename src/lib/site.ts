@@ -9,3 +9,5 @@ export const SITE = {
   repoUrl: process.env.NEXT_PUBLIC_REPO_URL ?? "",
   lastUpdated: "19 October 2026",
 };
+
+export const EXAMPLE_BRIEF = "/brief?c=Example+fintech&sector=BFSI&n=200&s=30&p=balanced&t=mid&o=yes";

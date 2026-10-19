@@ -47,6 +47,11 @@ export const SECTORS = peers.sectors;
 export const PEER_SOURCE = peers.source;
 export const PEER_TOTAL = peers.totalCentres;
 
+/** Directory centres present in each of the six metros, largest first. */
+export function peerTotals(): { name: string; total: number }[] {
+  return CITIES.map((c) => ({ name: c.name, total: peers.cities[c.peersKey]?.total ?? 0 })).sort((a, b) => b.total - a.total);
+}
+
 export const LIMITS = { headcountMin: 1, headcountMax: 5000 };
 
 /** Parses untrusted query params into a valid input, or returns a list of problems. */

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Cite } from "@/components/Cite";
-import { Badge, Card, Container, Eyebrow, Meter, SectionTitle } from "@/components/ui";
+import { Badge, btn, Card, Container, Eyebrow, Meter, PageHead, SectionTitle } from "@/components/ui";
 import { buildBrief, OWNERSHIP, parseInput, PEER_SOURCE, PEER_TOTAL, PRIORITIES, TIMELINES, type Eligibility, type ModelResult } from "@/lib/engine";
 import { evaluation, fact, realClaims, show } from "@/lib/ledger";
 
@@ -33,7 +33,7 @@ export default async function BriefPage({ searchParams }: { searchParams: SP }) 
 
   if (!input) {
     return (
-      <Container className="py-16">
+      <Container>
         <Eyebrow>Brief</Eyebrow>
         <h1 className="mt-3 text-2xl font-semibold tracking-tight">We need a little more to build your brief</h1>
         <ul className="mt-4 list-disc space-y-1 pl-5 text-ink-2" role="alert">
@@ -41,7 +41,7 @@ export default async function BriefPage({ searchParams }: { searchParams: SP }) 
             <li key={e}>{e}</li>
           ))}
         </ul>
-        <Link href="/" className="mt-6 inline-flex rounded-lg bg-accent px-4 py-2.5 text-sm font-semibold text-accent-ink">
+        <Link href="/" className="mt-6 inline-flex rounded-[9px] bg-accent px-4 py-2.5 text-sm font-semibold text-accent-ink">
           Back to the form
         </Link>
       </Container>
@@ -54,24 +54,33 @@ export default async function BriefPage({ searchParams }: { searchParams: SP }) 
   const title = input.company ? `${input.company}: India entry brief` : "Your India entry brief";
 
   return (
-    <Container className="py-12">
-      <Eyebrow>Brief · generated {evaluation.generatedAt} from {evaluation.verified} verified facts</Eyebrow>
-      <h1 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">{title}</h1>
-      <p className="mt-3 text-ink-2">
-        {input.headcount} people in {input.sector} · {input.seniorShare}% senior · priority: {PRIORITIES[input.priority].label.toLowerCase()} · first hires{" "}
-        {TIMELINES[input.timeline].toLowerCase()} · {OWNERSHIP[input.ownership].toLowerCase()}
-      </p>
-      <div className="mt-4 flex flex-wrap gap-3 text-sm">
-        <Link href="/" className="rounded-lg border border-line-strong px-3 py-2 hover:bg-sunken">
-          Edit inputs
-        </Link>
-        <span className="flex items-center gap-1.5 text-ink-3">
-          <span aria-hidden>✓</span> verified source <span aria-hidden className="ml-2 text-warn">◆</span> vendor source (treat as estimate)
+    <Container>
+      <PageHead
+        eyebrow={`India entry brief · built from ${evaluation.verified} verified facts`}
+        title={title}
+        sub={`${input.headcount} people in ${input.sector} · ${input.seniorShare}% senior · priority: ${PRIORITIES[input.priority].label.toLowerCase()} · first hires ${TIMELINES[input.timeline].toLowerCase()} · ${OWNERSHIP[input.ownership].toLowerCase()}`}
+        actions={
+          <>
+            <Link href="/" className={btn}>
+              ← Edit inputs
+            </Link>
+            <Link href="/evidence" className={btn}>
+              ✓ Evidence
+            </Link>
+          </>
+        }
+      />
+      <p className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px] text-ink-3">
+        <span>
+          <span aria-hidden>✓</span> verified source
         </span>
-      </div>
+        <span>
+          <span aria-hidden className="text-warn">◆</span> vendor source (treat as estimate)
+        </span>
+      </p>
 
       {/* Disclosure */}
-      <div className="mt-8 rounded-xl border border-warn/30 bg-warn-soft px-4 py-3 text-sm text-warn">
+      <div className="mt-4 rounded-[12px] border border-warn/25 bg-warn-soft px-4 py-3 text-xs leading-relaxed text-warn">
         <strong className="font-semibold">Disclosure:</strong> this concept is pitched to Flexiple, which sells GCC setup and managed teams.
         Its option appears below with the same rules as every other model, including when it is the wrong choice.
       </div>

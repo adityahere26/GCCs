@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Cite } from "@/components/Cite";
-import { Card, Container, Eyebrow } from "@/components/ui";
+import { Card, Container, PageHead } from "@/components/ui";
 import { fact, show } from "@/lib/ledger";
 
 export const metadata: Metadata = {
@@ -25,15 +25,14 @@ export default function CountsPage() {
   const max = Math.max(...values);
 
   return (
-    <Container className="py-12">
-      <Eyebrow>Count reconciler</Eyebrow>
-      <h1 className="mt-3 max-w-3xl text-3xl font-semibold tracking-tight">“How many GCCs does India have?” has eight answers</h1>
-      <p className="mt-3 max-w-2xl leading-relaxed text-ink-2">
-        None of these is a typo. They count different things: parent companies or individual centres, every company or only the
-        largest, a verified list or an industry estimate. Quoting one without its definition is how the confusion spreads.
-      </p>
+    <Container>
+      <PageHead
+        eyebrow="Count reconciler"
+        title="“How many GCCs does India have?” has eight answers"
+        sub="None of these is a typo. They count different things: parent companies or individual centres, every company or only the largest, a verified list or an industry estimate. Quoting one without its definition is how the confusion spreads."
+      />
 
-      <Card className="mt-10 p-5 sm:p-8">
+      <Card className="p-5 sm:p-7">
         <h2 className="text-sm font-medium text-ink-2">Number of GCCs in India, by source and definition</h2>
         <ol className="mt-6 space-y-5">
           {rows.map((r, i) => {

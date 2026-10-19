@@ -1,16 +1,14 @@
 import type { ReactNode } from "react";
-import { Container, Eyebrow } from "./ui";
+import { Card, Eyebrow } from "./ui";
 import { SITE } from "@/lib/site";
 
 export function LegalPage({ title, children }: { title: string; children: ReactNode }) {
   return (
-    <Container className="py-12">
-      <div className="max-w-2xl">
-        <Eyebrow>Last updated {SITE.lastUpdated}</Eyebrow>
-        <h1 className="mt-3 text-3xl font-semibold tracking-tight">{title}</h1>
-        <div className="prose-legal mt-6">{children}</div>
-      </div>
-    </Container>
+    <Card className="max-w-3xl p-6 md:p-8">
+      <Eyebrow>Last updated {SITE.lastUpdated}</Eyebrow>
+      <h1 className="text-2xl font-bold tracking-[-0.03em] md:text-[28px]">{title}</h1>
+      <div className="prose-legal mt-4">{children}</div>
+    </Card>
   );
 }
 
