@@ -7,8 +7,9 @@ import { EXAMPLE_BRIEF } from "@/lib/site";
 
 const NAV = [
   { href: "/", label: "Plan a GCC", icon: "▦", crumb: "Plan" },
-  { href: "/brief", label: "Example brief", icon: "▤", crumb: "Brief", example: true },
+  { href: "/brief", label: "Brief", icon: "▤", crumb: "Brief", example: true },
   { href: "/evidence", label: "Evidence ledger", icon: "✓", crumb: "Evidence" },
+  { href: "/ask", label: "Ask the evidence", icon: "✦", crumb: "Ask" },
   { href: "/counts", label: "Count reconciler", icon: "◫", crumb: "Counts" },
   { href: "/method", label: "Method", icon: "✧", crumb: "Method" },
 ];
@@ -44,6 +45,8 @@ export function Shell({ children, verified, total }: { children: ReactNode; veri
                 <li key={n.href}>
                   <Link
                     href={n.example ? EXAMPLE_BRIEF : n.href}
+                    // Briefs are rendered per request, so there is nothing useful to prefetch.
+                    prefetch={n.example ? false : undefined}
                     aria-current={on ? "page" : undefined}
                     title={n.label}
                     className={`flex items-center justify-center gap-3 rounded-[9px] px-1.5 py-3 text-[13px] md:justify-start md:px-3 md:py-2.5 ${

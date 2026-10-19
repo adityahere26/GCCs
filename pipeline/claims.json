@@ -792,7 +792,8 @@
   "value": "50",
   "asOf": "2024–29",
   "source": "lawasia",
-  "quote": "Incentives include R&D grants of up to INR500 million, rental reimbursements up to 50%, EPF support and a 45-day approval timeline."
+  "quote": "Incentives include R&D grants of up to INR500 million, rental reimbursements up to 50%, EPF support and a 45-day approval timeline.",
+  "unit": "%"
  },
  {
   "id": "policy-ka-beyond",
@@ -802,7 +803,8 @@
   "value": "10-50",
   "asOf": "2024–29",
   "source": "cam-karnataka",
-  "quote": "recruitment assistance in the 10-50 per cent range, basis the employee footfall is between 100 and 1000+ for GCCs establishing or expanding in the “Beyond Bengaluru” area"
+  "quote": "recruitment assistance in the 10-50 per cent range, basis the employee footfall is between 100 and 1000+ for GCCs establishing or expanding in the “Beyond Bengaluru” area",
+  "unit": "%"
  },
  {
   "id": "policy-mh-eligibility",
@@ -822,7 +824,8 @@
   "value": "20",
   "asOf": "Nov 2025",
   "source": "ey-maharashtra",
-  "quote": "Companies can choose a 20% capital subsidy or 10%–20% rental subsidy for five years."
+  "quote": "Companies can choose a 20% capital subsidy or 10%–20% rental subsidy for five years.",
+  "unit": "%"
  },
  {
   "id": "policy-mh-target",
@@ -882,7 +885,8 @@
   "value": "30–50",
   "asOf": "May 2025",
   "source": "khaitan-up",
-  "quote": "land subsidies (30–50% by region), full stamp duty exemption, capital subsidies"
+  "quote": "land subsidies (30–50% by region), full stamp duty exemption, capital subsidies",
+  "unit": "%"
  },
  {
   "id": "policy-gj-target",
@@ -912,7 +916,8 @@
   "value": "50",
   "asOf": "2026",
   "source": "lawasia",
-  "quote": "land cost incentives up to 50% (for up to 8 hectares)"
+  "quote": "land cost incentives up to 50% (for up to 8 hectares)",
+  "unit": "%"
  },
  {
   "id": "policy-tg-target",

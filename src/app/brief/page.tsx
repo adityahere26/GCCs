@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Cite } from "@/components/Cite";
+import { ExplainBrief } from "@/components/ExplainBrief";
 import { Badge, btn, Card, Container, Eyebrow, Meter, PageHead, SectionTitle } from "@/components/ui";
-import { buildBrief, OWNERSHIP, parseInput, PEER_SOURCE, PEER_TOTAL, PRIORITIES, TIMELINES, type Eligibility, type ModelResult } from "@/lib/engine";
+import { buildBrief, OWNERSHIP, parseInput, toQuery, PEER_SOURCE, PEER_TOTAL, PRIORITIES, TIMELINES, type CityResult, type Eligibility, type ModelResult } from "@/lib/engine";
 import { evaluation, fact, realClaims, show } from "@/lib/ledger";
 
 export const metadata: Metadata = {
@@ -10,6 +11,18 @@ export const metadata: Metadata = {
   // Briefs carry user inputs in the URL; keep them out of search engines.
   robots: { index: false, follow: false },
 };
+
+const COMPONENT_LABEL = { talent: "talent depth", peers: "peer centres", incentives: "state incentives" } as const;
+
+/** Names the score components where the top city beats the cheapest one, largest gap first. */
+function whyTop(top: CityResult, cheapest: CityResult): string {
+  const gaps = (Object.keys(COMPONENT_LABEL) as (keyof typeof COMPONENT_LABEL)[])
+    .map((k) => ({ k, gap: top.components[k] - cheapest.components[k] }))
+    .filter((g) => g.gap > 0)
+    .sort((a, b) => b.gap - a.gap)
+    .map((g) => COMPONENT_LABEL[g.k]);
+  return gaps.length > 1 ? `${gaps.slice(0, -1).join(", ")} and ${gaps.at(-1)}` : (gaps[0] ?? "your other priorities");
+}
 
 type SP = Promise<Record<string, string | string[] | undefined>>;
 
@@ -50,6 +63,7 @@ export default async function BriefPage({ searchParams }: { searchParams: SP }) 
 
   const b = buildBrief(input);
   const top = b.cities[0];
+  const cheapest = b.cities.reduce((a, c) => (c.annualPayrollCrore < a.annualPayrollCrore ? c : a));
   const unverified = realClaims.filter((c) => c.status !== "verified");
   const title = input.company ? `${input.company}: India entry brief` : "Your India entry brief";
 
@@ -85,6 +99,8 @@ export default async function BriefPage({ searchParams }: { searchParams: SP }) 
         Its option appears below with the same rules as every other model, including when it is the wrong choice.
       </div>
 
+      <ExplainBrief query={toQuery(input)} />
+
       {/* Headline */}
       <Card className="mt-8 p-6">
         <SectionTitle sub="Ranked by your priority weights. Scores compare these six metros only; they are not absolute ratings.">Recommendation</SectionTitle>
@@ -99,6 +115,13 @@ export default async function BriefPage({ searchParams }: { searchParams: SP }) 
           </a>
           .
         </p>
+        {cheapest.id !== top.id && (
+          <p className="mt-3 rounded-[9px] border border-line bg-sunken px-3 py-2 text-sm text-ink-2">
+            Lowest payroll is <strong>{cheapest.name}</strong> at <span className="tabular">₹{cheapest.annualPayrollCrore} crore</span> a year (
+            <span className="tabular">₹{Math.round((top.annualPayrollCrore - cheapest.annualPayrollCrore) * 10) / 10} crore</span> less).{" "}
+            {top.name} ranks higher on {whyTop(top, cheapest)}. See the score breakdown below.
+          </p>
+        )}
         <p className="mt-3 text-sm text-ink-3">
           Base salary medians exclude benefits, office and overheads. A vendor estimate of fully loaded cost is {b.runCost.text}
           <Cite claims={b.runCost.cite} />. The two measure different things, so they are shown separately rather than combined.

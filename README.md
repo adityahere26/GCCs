@@ -30,12 +30,25 @@ pipeline/peers.mjs      city × sector peer counts from Flexiple's public GCC di
 npm run pipeline:fetch && npm run pipeline:verify && npm run pipeline:peers
 ```
 
-Extraction in this prototype was done with Claude during development; `claims.json` is that output.
-The app never calls a model at request time, so it costs nothing to run and cannot invent numbers.
+The seed ledger (`claims.json`) was extracted with Claude during development. `pipeline/extract.mjs`
+automates extraction with Groq and runs every proposal through the same verifier
+(`GROQ_API_KEY=... npm run pipeline:extract -- <sourceId>`); proposals land in `pipeline/candidates/` for review.
+
+## AI features (Groq, free tier)
+
+- **Ask the evidence** (`/ask`) and **Explain this brief** call `openai/gpt-oss-120b` on Groq, falling back to
+  `openai/gpt-oss-20b` when rate limited. Both models are on Groq's free tier.
+- The model only sees verified ledger rows (and, for briefs, the app's computed results) and must cite a row per sentence.
+- `src/lib/guard.ts` removes any sentence containing a number that is not in its cited rows or the app's own results;
+  removed sentences are shown to the user.
+- Server-side only: the key is never sent to the browser. Same-origin check, per-IP rate limit, input caps, friendly errors.
+- Without `GROQ_API_KEY` the AI features show a clear message and the rest of the app works unchanged.
+
+Set the key locally in `.env.local` (git-ignored) and in Vercel under Project → Settings → Environment Variables.
 
 ## Architecture
 
-- Next.js 15 App Router, TypeScript, Tailwind v4. No database, no auth, no cookies, no analytics.
+- Next.js 16 App Router, TypeScript, Tailwind v4. No database, no auth, no cookies, no analytics.
 - `/brief` is server-rendered from URL parameters, validated in `src/lib/engine.ts` (`parseInput`).
 - `src/lib/engine.ts` holds all scoring, policy and operating-model rules; `src/lib/ledger.ts` only hands out verified facts.
 - Security headers and CSP in `next.config.ts`.

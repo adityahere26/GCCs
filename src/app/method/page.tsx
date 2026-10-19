@@ -11,10 +11,10 @@ export const metadata: Metadata = {
 
 const STEPS = [
   { n: "1", t: "Fetch", d: `Download each source page and store its plain text. ${evaluation.sourcesFetched} of ${evaluation.sources} sources could be fetched; the rest are marked unavailable rather than guessed.` },
-  { n: "2", t: "Extract (AI)", d: "A language model reads each page and proposes facts as {field, value, exact quote}. In this prototype, extraction was run with Claude during development." },
+  { n: "2", t: "Extract (AI)", d: "A language model reads each page and proposes facts as {field, value, exact quote}. The seed ledger was extracted with Claude during development; pipeline/extract.mjs automates this step with Groq, and its proposals go through the same check." },
   { n: "3", t: "Verify (code)", d: "A deterministic check confirms the quote appears word for word in the fetched text, and that every number in the value also appears in the quote. Anything else is rejected." },
   { n: "4", t: "Probe", d: `Fabricated facts (digit swaps, invented forecasts, wrong sources, paraphrases) are mixed in on every run. The verifier must reject all of them: ${evaluation.probesCaught} of ${evaluation.probes} caught.` },
-  { n: "5", t: "Build the brief (rules)", d: "The brief is assembled by published rules from verified rows only. No model writes numbers at request time, so nothing can be invented when you use it." },
+  { n: "5", t: "Build and explain", d: "The brief itself is assembled by published rules from verified rows. Optional AI summaries and answers (Groq) may only cite those rows, and code removes any sentence whose numbers are not in its sources." },
 ];
 
 export default function MethodPage() {

@@ -10,4 +10,5 @@ export const SITE = {
   lastUpdated: "19 October 2026",
 };
 
-export const EXAMPLE_BRIEF = "/brief?c=Example+fintech&sector=BFSI&n=200&s=30&p=balanced&t=mid&o=yes";
+/** A ready-made scenario (no company name) computed live from the same verified data as any brief. */
+export const EXAMPLE_BRIEF = "/brief?sector=BFSI&n=200&s=30&p=balanced&t=mid&o=yes";

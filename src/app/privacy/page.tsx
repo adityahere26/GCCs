@@ -19,9 +19,19 @@ export default function PrivacyPage() {
       </p>
       <ul>
         <li>Your answers are sent to our server only to build the brief page, and are placed in that page&apos;s web address.</li>
-        <li>They are not saved to any database or file by this application, and are not sent to any third party or AI service.</li>
+        <li>They are not saved to any database or file by this application.</li>
+        <li>They are sent to an AI service only if you press &ldquo;Explain this brief&rdquo; (see below).</li>
         <li>Because they are in the address, anyone you share the link with can see them. Brief pages are marked so search engines do not index them.</li>
       </ul>
+
+      <h2>AI features (Groq)</h2>
+      <p>
+        Two optional features use a language model hosted by Groq, Inc.: &ldquo;Ask the evidence&rdquo; and &ldquo;Explain this brief&rdquo;. Only
+        when you use them, we send Groq your question or your brief&apos;s planning answers (including the optional company name), together with
+        public facts from our evidence ledger. Nothing else is sent, and no account or identifier is attached. Groq processes the request to
+        generate the answer under its own terms; see <a href="https://groq.com/privacy-policy/" rel="noopener noreferrer">Groq&apos;s privacy policy</a>.
+        Please do not type personal or confidential information into these features.
+      </p>
 
       <h2>Hosting logs</h2>
       <p>
@@ -32,7 +42,7 @@ export default function PrivacyPage() {
 
       <h2>Third parties</h2>
       <p>
-        No third-party scripts, embeds, fonts or trackers load on this site. Fonts are served from this site&apos;s own domain. Links to
+        No third-party scripts, embeds, fonts or trackers load in your browser. The AI features call Groq from our server, not from your browser. Fonts are served from this site&apos;s own domain. Links to
         sources open the publisher&apos;s site, whose own privacy policy then applies.
       </p>
 

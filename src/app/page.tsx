@@ -51,7 +51,7 @@ export default function Home() {
                 <label htmlFor="c" className={labelCls}>
                   Company name <span className="font-normal text-ink-3">(optional)</span>
                 </label>
-                <input id="c" name="c" maxLength={80} autoComplete="organization" placeholder="e.g. Acme Robotics" className={field} />
+                <input id="c" name="c" maxLength={80} autoComplete="organization" placeholder="Your company name" className={field} />
                 <p className={hint}>Only used as the brief&apos;s title.</p>
               </div>
               <div>
@@ -143,14 +143,14 @@ export default function Home() {
             <span aria-hidden className="pointer-events-none absolute -top-6 right-2 text-[90px] text-white/5">
               ✧
             </span>
-            <p className="text-[10px] font-extrabold uppercase tracking-[0.13em] text-[#90e0ef]">✧ Example brief</p>
-            <h3 className="mt-2 max-w-xs text-[17px] font-semibold leading-snug">Where should a 200-person fintech GCC set up?</h3>
+            <p className="text-[10px] font-extrabold uppercase tracking-[0.13em] text-[#90e0ef]">✧ Ready-made scenario</p>
+            <h3 className="mt-2 max-w-xs text-[17px] font-semibold leading-snug">Where should a 200-person BFSI centre set up?</h3>
             <p className="mt-2 max-w-sm text-[11px] leading-relaxed text-[#cfe6f2]">
               Six metros scored on talent, pay, peer centres and state incentives, with setup models compared and every number cited.
             </p>
             <div className="mt-4 flex items-center justify-between gap-3">
               <span className="text-[10px] text-[#b3d3e4]">4 factors · 6 cities · 4 setup models</span>
-              <Link href={EXAMPLE_BRIEF} className="rounded-[9px] bg-white px-3 py-2 text-xs font-semibold text-[#05304d] hover:bg-[#e0f4fb]">
+              <Link href={EXAMPLE_BRIEF} prefetch={false} className="rounded-[9px] bg-white px-3 py-2 text-xs font-semibold text-[#05304d] hover:bg-[#e0f4fb]">
                 Open brief ↗
               </Link>
             </div>
