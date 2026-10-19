@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# pipeline: downloaded third-party pages are not redistributed
+/pipeline/cache/

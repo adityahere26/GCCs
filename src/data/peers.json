@@ -1,0 +1,1451 @@
+{
+  "source": {
+    "url": "https://flexiple.com/gcc/india",
+    "publisher": "Flexiple",
+    "fetchedAt": "2026-10-19"
+  },
+  "totalCentres": 536,
+  "sectors": [
+    "BFSI",
+    "Energy",
+    "Engineering & Industrial",
+    "Healthcare & Pharma",
+    "Professional & Info Services",
+    "Retail & Consumer",
+    "Technology",
+    "Telecom & Media"
+  ],
+  "cities": {
+    "bengaluru": {
+      "total": 437,
+      "captive": 395,
+      "sectors": {
+        "Professional & Info Services": 45,
+        "Technology": 173,
+        "BFSI": 59,
+        "Telecom & Media": 27,
+        "Healthcare & Pharma": 34,
+        "Engineering & Industrial": 62,
+        "Energy": 9,
+        "Retail & Consumer": 28
+      },
+      "sizes": {
+        "10k+": 55,
+        "1k-10k": 209,
+        "100-1k": 77,
+        "under 100": 5,
+        "": 91
+      },
+      "examples": {
+        "Professional & Info Services": [
+          "Accenture",
+          "Capgemini",
+          "Deloitte",
+          "EY Global Delivery Services",
+          "Concentrix",
+          "PwC Acceleration Centers"
+        ],
+        "Technology": [
+          "Amazon",
+          "IBM",
+          "Microsoft",
+          "Oracle",
+          "Google",
+          "Hewlett Packard Enterprise"
+        ],
+        "BFSI": [
+          "JPMorganChase",
+          "HSBC",
+          "Wells Fargo",
+          "Standard Chartered",
+          "Citi",
+          "Deutsche Bank"
+        ],
+        "Telecom & Media": [
+          "Nokia",
+          "Ericsson",
+          "Vodafone",
+          "BT Group",
+          "Verizon",
+          "Netcracker"
+        ],
+        "Healthcare & Pharma": [
+          "Optum",
+          "IQVIA",
+          "Novartis",
+          "Carelon Global Solutions India",
+          "Philips",
+          "GSK"
+        ],
+        "Engineering & Industrial": [
+          "Bosch Global Software Technologies",
+          "Schneider Electric",
+          "Honeywell",
+          "Siemens",
+          "Ford Motor Company",
+          "A.P. Moller - Maersk"
+        ],
+        "Energy": [
+          "Shell",
+          "bp",
+          "Baker Hughes",
+          "Enphase Energy",
+          "ChargePoint",
+          "Chevron"
+        ],
+        "Retail & Consumer": [
+          "Marriott International",
+          "Walmart Global Tech",
+          "Unilever",
+          "Target",
+          "PepsiCo",
+          "Lowe's India"
+        ]
+      }
+    },
+    "hyderabad": {
+      "total": 299,
+      "captive": 268,
+      "sectors": {
+        "Professional & Info Services": 32,
+        "Technology": 115,
+        "BFSI": 40,
+        "Healthcare & Pharma": 30,
+        "Engineering & Industrial": 35,
+        "Energy": 5,
+        "Retail & Consumer": 24,
+        "Telecom & Media": 18
+      },
+      "sizes": {
+        "10k+": 41,
+        "1k-10k": 153,
+        "100-1k": 37,
+        "under 100": 1,
+        "": 67
+      },
+      "examples": {
+        "Professional & Info Services": [
+          "Accenture",
+          "Capgemini",
+          "Deloitte",
+          "EY Global Delivery Services",
+          "Concentrix",
+          "PwC Acceleration Centers"
+        ],
+        "Technology": [
+          "Amazon",
+          "IBM",
+          "Microsoft",
+          "Oracle",
+          "Google",
+          "Hewlett Packard Enterprise"
+        ],
+        "BFSI": [
+          "JPMorganChase",
+          "HSBC",
+          "Wells Fargo",
+          "Bank of America",
+          "State Street",
+          "Morgan Stanley"
+        ],
+        "Healthcare & Pharma": [
+          "Optum",
+          "IQVIA",
+          "Novartis",
+          "R1 RCM",
+          "Carelon Global Solutions India",
+          "GSK"
+        ],
+        "Engineering & Industrial": [
+          "Bosch Global Software Technologies",
+          "Schneider Electric",
+          "Honeywell",
+          "Alstom",
+          "Mercedes-Benz Research and Development India",
+          "ZF Group"
+        ],
+        "Energy": [
+          "Shell",
+          "Baker Hughes",
+          "Enphase Energy",
+          "Hitachi Energy",
+          "TechnipFMC"
+        ],
+        "Retail & Consumer": [
+          "Marriott International",
+          "Walmart Global Tech",
+          "Target",
+          "PepsiCo",
+          "Lowe's India",
+          "Tesco Bengaluru"
+        ],
+        "Telecom & Media": [
+          "Amdocs",
+          "Verizon",
+          "Netcracker",
+          "Epsilon",
+          "Electronic Arts",
+          "Lumen Technologies"
+        ]
+      }
+    },
+    "chennai": {
+      "total": 244,
+      "captive": 224,
+      "sectors": {
+        "Professional & Info Services": 20,
+        "Technology": 93,
+        "BFSI": 34,
+        "Telecom & Media": 16,
+        "Healthcare & Pharma": 22,
+        "Engineering & Industrial": 40,
+        "Energy": 6,
+        "Retail & Consumer": 13
+      },
+      "sizes": {
+        "10k+": 38,
+        "1k-10k": 121,
+        "100-1k": 31,
+        "under 100": 1,
+        "": 53
+      },
+      "examples": {
+        "Professional & Info Services": [
+          "Accenture",
+          "Capgemini",
+          "DXC Technology",
+          "Atos",
+          "Thomson Reuters",
+          "ADP"
+        ],
+        "Technology": [
+          "Amazon",
+          "IBM",
+          "Microsoft",
+          "Oracle",
+          "Google",
+          "Hewlett Packard Enterprise"
+        ],
+        "BFSI": [
+          "Wells Fargo",
+          "Standard Chartered",
+          "Citi",
+          "Bank of America",
+          "Barclays",
+          "State Street"
+        ],
+        "Telecom & Media": [
+          "Nokia",
+          "Ericsson",
+          "Verizon",
+          "Epsilon",
+          "Electronic Arts",
+          "Lumen Technologies"
+        ],
+        "Healthcare & Pharma": [
+          "Optum",
+          "IQVIA",
+          "Novartis",
+          "R1 RCM",
+          "Carelon Global Solutions India",
+          "Philips"
+        ],
+        "Engineering & Industrial": [
+          "Bosch Global Software Technologies",
+          "Schneider Electric",
+          "Honeywell",
+          "Siemens",
+          "Ford Motor Company",
+          "A.P. Moller - Maersk"
+        ],
+        "Energy": [
+          "Shell",
+          "SLB",
+          "Enphase Energy",
+          "GE Vernova",
+          "ChargePoint",
+          "Hitachi Energy"
+        ],
+        "Retail & Consumer": [
+          "Walmart Global Tech",
+          "Unilever",
+          "Lowe's India",
+          "Tesco Bengaluru",
+          "Delta Air Lines",
+          "Poshmark"
+        ]
+      }
+    },
+    "mumbai": {
+      "total": 283,
+      "captive": 258,
+      "sectors": {
+        "Professional & Info Services": 29,
+        "Technology": 95,
+        "BFSI": 50,
+        "Telecom & Media": 16,
+        "Healthcare & Pharma": 25,
+        "Engineering & Industrial": 37,
+        "Energy": 7,
+        "Retail & Consumer": 24
+      },
+      "sizes": {
+        "10k+": 45,
+        "1k-10k": 137,
+        "100-1k": 31,
+        "": 70
+      },
+      "examples": {
+        "Professional & Info Services": [
+          "Accenture",
+          "Capgemini",
+          "Deloitte",
+          "EY Global Delivery Services",
+          "PwC Acceleration Centers",
+          "KPMG Global Services"
+        ],
+        "Technology": [
+          "Amazon",
+          "Microsoft",
+          "Oracle",
+          "Google",
+          "Hewlett Packard Enterprise",
+          "Dell Technologies"
+        ],
+        "BFSI": [
+          "JPMorganChase",
+          "HSBC",
+          "Wells Fargo",
+          "Standard Chartered",
+          "Citi",
+          "Bank of America"
+        ],
+        "Telecom & Media": [
+          "Nokia",
+          "Vodafone",
+          "Amdocs",
+          "Epsilon",
+          "Orange Business",
+          "Electronic Arts"
+        ],
+        "Healthcare & Pharma": [
+          "IQVIA",
+          "Novartis",
+          "Philips",
+          "GSK",
+          "GE HealthCare",
+          "Novo Nordisk"
+        ],
+        "Engineering & Industrial": [
+          "Schneider Electric",
+          "Honeywell",
+          "Siemens",
+          "A.P. Moller - Maersk",
+          "Airbus",
+          "Boeing"
+        ],
+        "Energy": [
+          "Shell",
+          "SLB",
+          "bp",
+          "Baker Hughes",
+          "Aker Solutions",
+          "Hitachi Energy"
+        ],
+        "Retail & Consumer": [
+          "Marriott International",
+          "Unilever",
+          "Target",
+          "PepsiCo",
+          "Procter & Gamble",
+          "Qatar Airways"
+        ]
+      }
+    },
+    "pune": {
+      "total": 169,
+      "captive": 156,
+      "sectors": {
+        "Professional & Info Services": 14,
+        "BFSI": 30,
+        "Engineering & Industrial": 30,
+        "Telecom & Media": 9,
+        "Technology": 62,
+        "Healthcare & Pharma": 10,
+        "Energy": 3,
+        "Retail & Consumer": 11
+      },
+      "sizes": {
+        "10k+": 15,
+        "1k-10k": 88,
+        "100-1k": 27,
+        "under 100": 2,
+        "": 37
+      },
+      "examples": {
+        "Professional & Info Services": [
+          "Accenture",
+          "Capgemini",
+          "Atos",
+          "ADP",
+          "EPAM Systems",
+          "NielsenIQ"
+        ],
+        "BFSI": [
+          "JPMorganChase",
+          "HSBC",
+          "Citi",
+          "Deutsche Bank",
+          "Barclays",
+          "BNY"
+        ],
+        "Engineering & Industrial": [
+          "Bosch Global Software Technologies",
+          "Honeywell",
+          "Siemens",
+          "A.P. Moller - Maersk",
+          "Mercedes-Benz Research and Development India",
+          "Flex"
+        ],
+        "Telecom & Media": [
+          "Vodafone",
+          "Amdocs",
+          "Netcracker",
+          "Telstra",
+          "CSG International",
+          "Light & Wonder"
+        ],
+        "Technology": [
+          "FIS",
+          "Broadcom",
+          "HARMAN International",
+          "Fujitsu",
+          "LG Electronics",
+          "Synopsys"
+        ],
+        "Healthcare & Pharma": [
+          "Philips",
+          "Cotiviti",
+          "athenahealth",
+          "Veradigm",
+          "Altera Digital Health India",
+          "Meditab Software"
+        ],
+        "Energy": [
+          "SLB",
+          "bp",
+          "Baker Hughes"
+        ],
+        "Retail & Consumer": [
+          "General Mills",
+          "Cimpress",
+          "Fareportal",
+          "Airbnb",
+          "American Airlines",
+          "HEINEKEN"
+        ]
+      }
+    },
+    "delhi": {
+      "total": 305,
+      "captive": 271,
+      "sectors": {
+        "Technology": 106,
+        "Professional & Info Services": 37,
+        "BFSI": 47,
+        "Telecom & Media": 20,
+        "Healthcare & Pharma": 20,
+        "Engineering & Industrial": 41,
+        "Energy": 9,
+        "Retail & Consumer": 25
+      },
+      "sizes": {
+        "10k+": 44,
+        "1k-10k": 137,
+        "100-1k": 38,
+        "under 100": 2,
+        "": 84
+      },
+      "examples": {
+        "Technology": [
+          "Amazon",
+          "IBM",
+          "Microsoft",
+          "Oracle",
+          "Google",
+          "Hewlett Packard Enterprise"
+        ],
+        "Professional & Info Services": [
+          "Deloitte",
+          "EY Global Delivery Services",
+          "Concentrix",
+          "PwC Acceleration Centers",
+          "DXC Technology",
+          "KPMG Global Services"
+        ],
+        "BFSI": [
+          "Wells Fargo",
+          "Standard Chartered",
+          "Citi",
+          "Bank of America",
+          "Deutsche Bank",
+          "Barclays"
+        ],
+        "Telecom & Media": [
+          "Nokia",
+          "Ericsson",
+          "Vodafone",
+          "BT Group",
+          "Amdocs",
+          "Verizon"
+        ],
+        "Healthcare & Pharma": [
+          "Optum",
+          "Novartis",
+          "R1 RCM",
+          "Carelon Global Solutions India",
+          "Philips",
+          "GSK"
+        ],
+        "Engineering & Industrial": [
+          "Ford Motor Company",
+          "Alstom",
+          "Airbus",
+          "Boeing",
+          "Johnson Controls",
+          "Emerson"
+        ],
+        "Energy": [
+          "Shell",
+          "SLB",
+          "bp",
+          "Enphase Energy",
+          "Landis+Gyr",
+          "GE Vernova"
+        ],
+        "Retail & Consumer": [
+          "Marriott International",
+          "Walmart Global Tech",
+          "Unilever",
+          "Target",
+          "PepsiCo",
+          "Procter & Gamble"
+        ]
+      }
+    },
+    "kolkata": {
+      "total": 74,
+      "captive": 67,
+      "sectors": {
+        "Technology": 14,
+        "Professional & Info Services": 6,
+        "BFSI": 11,
+        "Telecom & Media": 5,
+        "Retail & Consumer": 9,
+        "Healthcare & Pharma": 8,
+        "Energy": 4,
+        "Engineering & Industrial": 17
+      },
+      "sizes": {
+        "10k+": 8,
+        "1k-10k": 25,
+        "100-1k": 4,
+        "": 37
+      },
+      "examples": {
+        "Technology": [
+          "IBM",
+          "Uber",
+          "HighRadius",
+          "Tavant",
+          "Chegg",
+          "Rippling"
+        ],
+        "Professional & Info Services": [
+          "Concentrix",
+          "PwC Acceleration Centers",
+          "Kantar",
+          "GlobalData Academia",
+          "Ipsos",
+          "Fulcrum Digital"
+        ],
+        "BFSI": [
+          "HSBC",
+          "Standard Chartered",
+          "WTW",
+          "Synchrony",
+          "Revolut",
+          "Swiss Re"
+        ],
+        "Telecom & Media": [
+          "Ericsson",
+          "BT Group",
+          "Verizon",
+          "Motorola Solutions",
+          "The Walt Disney Company"
+        ],
+        "Retail & Consumer": [
+          "Marriott International",
+          "Unilever",
+          "Target",
+          "Colgate-Palmolive",
+          "Airbnb",
+          "Henkel"
+        ],
+        "Healthcare & Pharma": [
+          "GSK",
+          "Novo Nordisk",
+          "Sanofi",
+          "Bayer",
+          "Merck Group",
+          "Baxter"
+        ],
+        "Energy": [
+          "bp",
+          "Landis+Gyr",
+          "GE Vernova",
+          "Hitachi Energy"
+        ],
+        "Engineering & Industrial": [
+          "Visteon",
+          "Ecolab",
+          "Keysight Technologies",
+          "3M",
+          "Avery Dennison",
+          "CNH"
+        ]
+      }
+    },
+    "coimbatore": {
+      "total": 48,
+      "captive": 46,
+      "sectors": {
+        "Engineering & Industrial": 13,
+        "BFSI": 9,
+        "Technology": 16,
+        "Energy": 2,
+        "Professional & Info Services": 2,
+        "Healthcare & Pharma": 4,
+        "Telecom & Media": 1,
+        "Retail & Consumer": 1
+      },
+      "sizes": {
+        "10k+": 3,
+        "1k-10k": 23,
+        "100-1k": 5,
+        "": 17
+      },
+      "examples": {
+        "Engineering & Industrial": [
+          "Bosch Global Software Technologies",
+          "Ford Motor Company",
+          "Caterpillar Inc.",
+          "Flex",
+          "ZF Group",
+          "Renault Nissan Technology & Business Centre India"
+        ],
+        "BFSI": [
+          "State Street",
+          "Fidelity Investments",
+          "Societe Generale Global Solution Centre",
+          "First American",
+          "MSCI",
+          "Mr. Cooper"
+        ],
+        "Technology": [
+          "OpenText",
+          "Blue Yonder",
+          "Temenos",
+          "o9 Solutions",
+          "Agilysys",
+          "Syncfusion"
+        ],
+        "Energy": [
+          "SLB",
+          "Baker Hughes"
+        ],
+        "Professional & Info Services": [
+          "Guidehouse",
+          "Fulcrum Digital"
+        ],
+        "Healthcare & Pharma": [
+          "Cotiviti",
+          "athenahealth",
+          "Medtronic",
+          "Roche"
+        ],
+        "Telecom & Media": [
+          "Omnicom Global Solutions"
+        ],
+        "Retail & Consumer": [
+          "HEINEKEN"
+        ]
+      }
+    },
+    "jaipur": {
+      "total": 15,
+      "captive": 13,
+      "sectors": {
+        "BFSI": 2,
+        "Technology": 4,
+        "Professional & Info Services": 2,
+        "Retail & Consumer": 3,
+        "Engineering & Industrial": 3,
+        "Telecom & Media": 1
+      },
+      "sizes": {
+        "10k+": 2,
+        "1k-10k": 4,
+        "": 9
+      },
+      "examples": {
+        "BFSI": [
+          "Deutsche Bank",
+          "MetLife"
+        ],
+        "Technology": [
+          "Salesforce",
+          "Chegg",
+          "Abacus.AI",
+          "Workday"
+        ],
+        "Professional & Info Services": [
+          "Nagarro",
+          "Xebia"
+        ],
+        "Retail & Consumer": [
+          "Airbnb",
+          "Kraft Heinz",
+          "METRO Global Solution Centre"
+        ],
+        "Engineering & Industrial": [
+          "DHL",
+          "Hyundai Motor",
+          "Makino"
+        ],
+        "Telecom & Media": [
+          "The Walt Disney Company"
+        ]
+      }
+    },
+    "vadodara": {
+      "total": 17,
+      "captive": 16,
+      "sectors": {
+        "Engineering & Industrial": 4,
+        "Professional & Info Services": 3,
+        "BFSI": 1,
+        "Healthcare & Pharma": 3,
+        "Technology": 3,
+        "Energy": 2,
+        "Retail & Consumer": 1
+      },
+      "sizes": {
+        "10k+": 1,
+        "1k-10k": 7,
+        "100-1k": 4,
+        "": 5
+      },
+      "examples": {
+        "Engineering & Industrial": [
+          "Schneider Electric",
+          "Alstom",
+          "Dover",
+          "Markem-Imaje"
+        ],
+        "Professional & Info Services": [
+          "NielsenIQ",
+          "Nielsen",
+          "Numerator"
+        ],
+        "BFSI": [
+          "Mastercard"
+        ],
+        "Healthcare & Pharma": [
+          "eClinicalWorks",
+          "Veradigm",
+          "Altera Digital Health India"
+        ],
+        "Technology": [
+          "MRI Software",
+          "Civica Education Operations",
+          "Abacus.AI"
+        ],
+        "Energy": [
+          "GE Vernova",
+          "Hitachi Energy"
+        ],
+        "Retail & Consumer": [
+          "HEINEKEN"
+        ]
+      }
+    },
+    "ahmedabad": {
+      "total": 30,
+      "captive": 29,
+      "sectors": {
+        "Telecom & Media": 2,
+        "Engineering & Industrial": 4,
+        "Professional & Info Services": 3,
+        "Technology": 6,
+        "Healthcare & Pharma": 3,
+        "Retail & Consumer": 9,
+        "Energy": 1,
+        "BFSI": 2
+      },
+      "sizes": {
+        "10k+": 3,
+        "1k-10k": 10,
+        "100-1k": 2,
+        "": 15
+      },
+      "examples": {
+        "Telecom & Media": [
+          "Vodafone",
+          "The Walt Disney Company"
+        ],
+        "Engineering & Industrial": [
+          "Ford Motor Company",
+          "DHL",
+          "Hyundai Motor",
+          "Makino"
+        ],
+        "Professional & Info Services": [
+          "S&P Global",
+          "Thomson Reuters",
+          "Numerator"
+        ],
+        "Technology": [
+          "Micron Technology",
+          "Infineon Technologies",
+          "Civica Education Operations",
+          "Meta Platforms",
+          "Sonatype",
+          "Workday"
+        ],
+        "Healthcare & Pharma": [
+          "Thermo Fisher Scientific",
+          "eClinicalWorks",
+          "Meditab Software"
+        ],
+        "Retail & Consumer": [
+          "Procter & Gamble",
+          "Qatar Airways",
+          "Cimpress",
+          "Colgate-Palmolive",
+          "Airbnb",
+          "HEINEKEN"
+        ],
+        "Energy": [
+          "Hitachi Energy"
+        ],
+        "BFSI": [
+          "Invesco",
+          "Vanguard"
+        ]
+      }
+    },
+    "mysuru": {
+      "total": 5,
+      "captive": 5,
+      "sectors": {
+        "Engineering & Industrial": 2,
+        "Retail & Consumer": 1,
+        "Technology": 1,
+        "Telecom & Media": 1
+      },
+      "sizes": {
+        "1k-10k": 4,
+        "": 1
+      },
+      "examples": {
+        "Engineering & Industrial": [
+          "Mercedes-Benz Research and Development India",
+          "3M"
+        ],
+        "Retail & Consumer": [
+          "Lowe's India"
+        ],
+        "Technology": [
+          "Applied Materials"
+        ],
+        "Telecom & Media": [
+          "Epsilon"
+        ]
+      }
+    },
+    "chhatrapati-sambhajinagar": {
+      "total": 3,
+      "captive": 3,
+      "sectors": {
+        "Engineering & Industrial": 1,
+        "Retail & Consumer": 1,
+        "Technology": 1
+      },
+      "sizes": {
+        "1k-10k": 3
+      },
+      "examples": {
+        "Engineering & Industrial": [
+          "Caterpillar Inc."
+        ],
+        "Retail & Consumer": [
+          "AB InBev"
+        ],
+        "Technology": [
+          "Yardi"
+        ]
+      }
+    },
+    "hosur": {
+      "total": 3,
+      "captive": 3,
+      "sectors": {
+        "Engineering & Industrial": 3
+      },
+      "sizes": {
+        "1k-10k": 3
+      },
+      "examples": {
+        "Engineering & Industrial": [
+          "Caterpillar Inc.",
+          "Stellantis",
+          "Wabtec"
+        ]
+      }
+    },
+    "kanchipuram": {
+      "total": 1,
+      "captive": 1,
+      "sectors": {
+        "Engineering & Industrial": 1
+      },
+      "sizes": {
+        "1k-10k": 1
+      },
+      "examples": {
+        "Engineering & Industrial": [
+          "Flex"
+        ]
+      }
+    },
+    "salem": {
+      "total": 3,
+      "captive": 3,
+      "sectors": {
+        "Engineering & Industrial": 1,
+        "BFSI": 1,
+        "Technology": 1
+      },
+      "sizes": {
+        "1k-10k": 3
+      },
+      "examples": {
+        "Engineering & Industrial": [
+          "Renault Nissan Technology & Business Centre India"
+        ],
+        "BFSI": [
+          "First American"
+        ],
+        "Technology": [
+          "Syncfusion"
+        ]
+      }
+    },
+    "kochi": {
+      "total": 15,
+      "captive": 13,
+      "sectors": {
+        "Professional & Info Services": 2,
+        "BFSI": 2,
+        "Healthcare & Pharma": 3,
+        "Technology": 4,
+        "Engineering & Industrial": 4
+      },
+      "sizes": {
+        "1k-10k": 1,
+        "100-1k": 3,
+        "": 11
+      },
+      "examples": {
+        "Professional & Info Services": [
+          "Conduent",
+          "Fulcrum Digital"
+        ],
+        "BFSI": [
+          "Equifax",
+          "Citizens Financial Group"
+        ],
+        "Healthcare & Pharma": [
+          "CareStack",
+          "Medtronic",
+          "Roche"
+        ],
+        "Technology": [
+          "SOTI",
+          "ABC Fitness",
+          "Huawei",
+          "JAGGAER"
+        ],
+        "Engineering & Industrial": [
+          "Cubic",
+          "Daimler Truck",
+          "Lubrizol",
+          "ZF LIFETEC"
+        ]
+      }
+    },
+    "visakhapatnam": {
+      "total": 15,
+      "captive": 14,
+      "sectors": {
+        "Professional & Info Services": 2,
+        "Technology": 4,
+        "BFSI": 2,
+        "Engineering & Industrial": 4,
+        "Healthcare & Pharma": 3
+      },
+      "sizes": {
+        "1k-10k": 1,
+        "100-1k": 1,
+        "": 13
+      },
+      "examples": {
+        "Professional & Info Services": [
+          "FactSet",
+          "Fulcrum Digital"
+        ],
+        "Technology": [
+          "Phenom",
+          "ABC Fitness",
+          "JAGGAER",
+          "Workday"
+        ],
+        "BFSI": [
+          "Citizens Financial Group",
+          "Zurich Insurance"
+        ],
+        "Engineering & Industrial": [
+          "Cubic",
+          "Daimler Truck",
+          "Lubrizol",
+          "ZF LIFETEC"
+        ],
+        "Healthcare & Pharma": [
+          "Eisai",
+          "Medtronic",
+          "Roche"
+        ]
+      }
+    },
+    "vijayawada": {
+      "total": 1,
+      "captive": 1,
+      "sectors": {
+        "Professional & Info Services": 1
+      },
+      "sizes": {
+        "1k-10k": 1
+      },
+      "examples": {
+        "Professional & Info Services": [
+          "FactSet"
+        ]
+      }
+    },
+    "nashik": {
+      "total": 2,
+      "captive": 2,
+      "sectors": {
+        "Engineering & Industrial": 1,
+        "Retail & Consumer": 1
+      },
+      "sizes": {
+        "1k-10k": 2
+      },
+      "examples": {
+        "Engineering & Industrial": [
+          "Emerson"
+        ],
+        "Retail & Consumer": [
+          "General Mills"
+        ]
+      }
+    },
+    "puducherry": {
+      "total": 2,
+      "captive": 2,
+      "sectors": {
+        "Engineering & Industrial": 1,
+        "Technology": 1
+      },
+      "sizes": {
+        "1k-10k": 2
+      },
+      "examples": {
+        "Engineering & Industrial": [
+          "Eaton"
+        ],
+        "Technology": [
+          "Lenovo"
+        ]
+      }
+    },
+    "thiruvananthapuram": {
+      "total": 16,
+      "captive": 14,
+      "sectors": {
+        "Professional & Info Services": 2,
+        "BFSI": 3,
+        "Technology": 4,
+        "Healthcare & Pharma": 3,
+        "Engineering & Industrial": 4
+      },
+      "sizes": {
+        "1k-10k": 3,
+        "100-1k": 2,
+        "": 11
+      },
+      "examples": {
+        "Professional & Info Services": [
+          "Guidehouse",
+          "Fulcrum Digital"
+        ],
+        "BFSI": [
+          "Allianz Technology",
+          "Equifax",
+          "Citizens Financial Group"
+        ],
+        "Technology": [
+          "Finastra",
+          "ABC Fitness",
+          "JAGGAER",
+          "Workday"
+        ],
+        "Healthcare & Pharma": [
+          "CareStack",
+          "Medtronic",
+          "Roche"
+        ],
+        "Engineering & Industrial": [
+          "Cubic",
+          "Daimler Truck",
+          "Lubrizol",
+          "ZF LIFETEC"
+        ]
+      }
+    },
+    "kollam": {
+      "total": 2,
+      "captive": 1,
+      "sectors": {
+        "Professional & Info Services": 1,
+        "Healthcare & Pharma": 1
+      },
+      "sizes": {
+        "1k-10k": 1,
+        "100-1k": 1
+      },
+      "examples": {
+        "Professional & Info Services": [
+          "Guidehouse"
+        ],
+        "Healthcare & Pharma": [
+          "CareStack"
+        ]
+      }
+    },
+    "indore": {
+      "total": 9,
+      "captive": 9,
+      "sectors": {
+        "Engineering & Industrial": 3,
+        "BFSI": 2,
+        "Technology": 3,
+        "Retail & Consumer": 1
+      },
+      "sizes": {
+        "1k-10k": 4,
+        "100-1k": 1,
+        "": 4
+      },
+      "examples": {
+        "Engineering & Industrial": [
+          "John Deere",
+          "Cummins Inc.",
+          "DHL"
+        ],
+        "BFSI": [
+          "Revolut",
+          "Worldpay"
+        ],
+        "Technology": [
+          "Rakuten India",
+          "Trimble",
+          "Workday"
+        ],
+        "Retail & Consumer": [
+          "HEINEKEN"
+        ]
+      }
+    },
+    "bhopal": {
+      "total": 1,
+      "captive": 1,
+      "sectors": {
+        "Retail & Consumer": 1
+      },
+      "sizes": {
+        "1k-10k": 1
+      },
+      "examples": {
+        "Retail & Consumer": [
+          "Procter & Gamble"
+        ]
+      }
+    },
+    "erode": {
+      "total": 2,
+      "captive": 2,
+      "sectors": {
+        "Technology": 2
+      },
+      "sizes": {
+        "1k-10k": 2
+      },
+      "examples": {
+        "Technology": [
+          "Temenos",
+          "Syncfusion"
+        ]
+      }
+    },
+    "chandigarh": {
+      "total": 10,
+      "captive": 10,
+      "sectors": {
+        "Healthcare & Pharma": 1,
+        "Technology": 4,
+        "BFSI": 1,
+        "Engineering & Industrial": 2,
+        "Energy": 1,
+        "Retail & Consumer": 1
+      },
+      "sizes": {
+        "1k-10k": 2,
+        "100-1k": 3,
+        "": 5
+      },
+      "examples": {
+        "Healthcare & Pharma": [
+          "Cotiviti"
+        ],
+        "Technology": [
+          "Zscaler",
+          "ZoomInfo",
+          "Precisely",
+          "Workday"
+        ],
+        "BFSI": [
+          "Gallagher Center of Excellence"
+        ],
+        "Engineering & Industrial": [
+          "Flowserve",
+          "Hyundai Motor"
+        ],
+        "Energy": [
+          "Hitachi Energy"
+        ],
+        "Retail & Consumer": [
+          "METRO Global Solution Centre"
+        ]
+      }
+    },
+    "bhubaneswar": {
+      "total": 5,
+      "captive": 5,
+      "sectors": {
+        "Technology": 2,
+        "BFSI": 2,
+        "Energy": 1
+      },
+      "sizes": {
+        "1k-10k": 3,
+        "": 2
+      },
+      "examples": {
+        "Technology": [
+          "HighRadius",
+          "Workday"
+        ],
+        "BFSI": [
+          "ICE",
+          "Chubb"
+        ],
+        "Energy": [
+          "Hitachi Energy"
+        ]
+      }
+    },
+    "mohali": {
+      "total": 1,
+      "captive": 1,
+      "sectors": {
+        "Technology": 1
+      },
+      "sizes": {
+        "1k-10k": 1
+      },
+      "examples": {
+        "Technology": [
+          "Zscaler"
+        ]
+      }
+    },
+    "nagpur": {
+      "total": 9,
+      "captive": 9,
+      "sectors": {
+        "BFSI": 1,
+        "Technology": 4,
+        "Healthcare & Pharma": 1,
+        "Engineering & Industrial": 2,
+        "Retail & Consumer": 1
+      },
+      "sizes": {
+        "1k-10k": 2,
+        "100-1k": 1,
+        "": 6
+      },
+      "examples": {
+        "BFSI": [
+          "Principal Financial Group"
+        ],
+        "Technology": [
+          "Yardi",
+          "Icertis",
+          "Western Digital",
+          "Workday"
+        ],
+        "Healthcare & Pharma": [
+          "AstraZeneca"
+        ],
+        "Engineering & Industrial": [
+          "Collins Aerospace",
+          "Daikin"
+        ],
+        "Retail & Consumer": [
+          "McDonald's"
+        ]
+      }
+    },
+    "phaltan": {
+      "total": 1,
+      "captive": 1,
+      "sectors": {
+        "Engineering & Industrial": 1
+      },
+      "sizes": {
+        "1k-10k": 1
+      },
+      "examples": {
+        "Engineering & Industrial": [
+          "Cummins Inc."
+        ]
+      }
+    },
+    "patna": {
+      "total": 1,
+      "captive": 1,
+      "sectors": {
+        "Engineering & Industrial": 1
+      },
+      "sizes": {
+        "1k-10k": 1
+      },
+      "examples": {
+        "Engineering & Industrial": [
+          "Wabtec"
+        ]
+      }
+    },
+    "shahjahanpur": {
+      "total": 1,
+      "captive": 1,
+      "sectors": {
+        "Engineering & Industrial": 1
+      },
+      "sizes": {
+        "1k-10k": 1
+      },
+      "examples": {
+        "Engineering & Industrial": [
+          "Wabtec"
+        ]
+      }
+    },
+    "tiruchirappalli": {
+      "total": 1,
+      "captive": 1,
+      "sectors": {
+        "Technology": 1
+      },
+      "sizes": {
+        "1k-10k": 1
+      },
+      "examples": {
+        "Technology": [
+          "Syncfusion"
+        ]
+      }
+    },
+    "mangaluru": {
+      "total": 1,
+      "captive": 1,
+      "sectors": {
+        "Telecom & Media": 1
+      },
+      "sizes": {
+        "1k-10k": 1
+      },
+      "examples": {
+        "Telecom & Media": [
+          "DAZN"
+        ]
+      }
+    },
+    "madurai": {
+      "total": 3,
+      "captive": 3,
+      "sectors": {
+        "Technology": 3
+      },
+      "sizes": {
+        "100-1k": 3
+      },
+      "examples": {
+        "Technology": [
+          "Aptean Food & Beverage",
+          "Chain-Sys",
+          "Solartis"
+        ]
+      }
+    },
+    "gift-city": {
+      "total": 2,
+      "captive": 2,
+      "sectors": {
+        "BFSI": 2
+      },
+      "sizes": {
+        "": 2
+      },
+      "examples": {
+        "BFSI": [
+          "BNP Paribas",
+          "MUFG"
+        ]
+      }
+    }
+  }
+}
