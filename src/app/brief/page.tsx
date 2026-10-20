@@ -95,7 +95,7 @@ export default async function BriefPage({ searchParams }: { searchParams: SP }) 
 
       {/* Disclosure */}
       <div className="mt-5 rounded-[16px] bg-block-cream px-5 py-4 text-[15px] leading-relaxed text-ink">
-        <strong className="font-semibold">Disclosure:</strong> this concept is pitched to Flexiple, which sells GCC setup and managed teams.
+        <strong className="font-semibold">Disclosure:</strong> talent and peer data come from Flexiple, which also sells GCC setup and managed teams.
         Its option appears below with the same rules as every other model, including when it is the wrong choice.
       </div>
 
@@ -247,7 +247,7 @@ export default async function BriefPage({ searchParams }: { searchParams: SP }) 
                 <h3 className="font-semibold">{m.name}</h3>
                 <Badge tone={FIT[m.fit].tone}>{FIT[m.fit].label}</Badge>
               </div>
-              {m.isFlexiple && <p className="mt-1 text-xs text-warn">Sold by Flexiple, the company this concept is pitched to.</p>}
+              {m.isFlexiple && <p className="mt-1 text-xs text-warn">Sold by Flexiple, whose public data this brief uses.</p>}
               <dl className="mt-4 space-y-3 text-sm">
                 <div>
                   <dt className="text-ink-3">Time to start</dt>

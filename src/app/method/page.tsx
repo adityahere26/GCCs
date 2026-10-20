@@ -79,7 +79,7 @@ export default function MethodPage() {
         <SectionTitle>Neutrality rules</SectionTitle>
         <ul className="grid gap-3 text-sm text-ink-2 md:grid-cols-2">
           {[
-            "The concept is pitched to Flexiple, which sells managed teams and GCC setup. Every brief says so.",
+            "Talent and peer data come from Flexiple, which also sells managed teams and GCC setup. Every brief says so.",
             "Flexiple's model is scored by the same rules as the others and is marked a poor fit above 50 people when you want your own entity.",
             "No ranking, placement or data edit can be bought. Vendor-sourced numbers are labelled as estimates.",
             "Where sources disagree, all values are shown. Nothing is averaged away.",

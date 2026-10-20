@@ -1,7 +1,7 @@
 # Ground Truth
 
 A free, source-cited India entry brief for companies planning a Global Capability Centre (GCC).
-Concept prototype for Flexiple's product internship assignment. Not affiliated with Flexiple.
+Concept prototype built for a product internship assignment. Not affiliated with or endorsed by any company named in it.
 
 **Core idea:** AI reads the sources; code decides what to trust. Every number in a brief links to
 the exact sentence it came from, and a deterministic check rejects any fact whose quote is not in

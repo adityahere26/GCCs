@@ -37,7 +37,7 @@ export async function POST(req: Request) {
     const cites = [...m.timeToStart.cite, ...(m.monthlyFee?.cite ?? []), ...(m.oneTime?.cite ?? [])];
     add(cites);
     computed.push(m.timeToStart.text, m.monthlyFee?.text ?? "", m.oneTime?.text ?? "", ...m.reasons);
-    return `${m.name}: ${m.fit}${m.isFlexiple ? " (sold by Flexiple, the company this tool is pitched to)" : ""}. Reasons: ${m.reasons.join(" ")} [${cites.map((c) => c.id).join(", ")}]`;
+    return `${m.name}: ${m.fit}${m.isFlexiple ? " (sold by Flexiple, whose public data this tool uses)" : ""}. Reasons: ${m.reasons.join(" ")} [${cites.map((c) => c.id).join(", ")}]`;
   });
 
   add([fact("cost-captive-breakeven")]);

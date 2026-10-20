@@ -9,8 +9,8 @@ export default function TermsPage() {
     <LegalPage title="Terms of use">
       <h2>What this is</h2>
       <p>
-        Ground Truth is a free, non-commercial concept prototype made by {SITE.author} as part of a product internship assignment for
-        Flexiple. It is not a Flexiple product, and Flexiple has not reviewed or endorsed it. It sells nothing and takes no payments.
+        Ground Truth is a free, non-commercial concept prototype made by {SITE.author} as part of a product internship assignment. It is
+        not a product of, and has not been reviewed or endorsed by, any company named on this site. It sells nothing and takes no payments.
       </p>
 
       <h2>Not advice</h2>

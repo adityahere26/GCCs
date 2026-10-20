@@ -95,7 +95,7 @@ export function Shell({ children, verified, total, probes, sources }: { children
           <div>
             <p className="text-[22px] font-semibold tracking-[-0.03em]">Ground Truth</p>
             <p className="mt-2 max-w-xl text-sm leading-relaxed text-ink-3">
-              Independent concept prototype built for a Flexiple product internship assignment. Not affiliated with or endorsed by Flexiple. Figures
+              Independent concept prototype built for a product internship assignment. Not affiliated with or endorsed by any company named here. Figures
               are quoted from public sources and linked.
             </p>
           </div>

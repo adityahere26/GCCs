@@ -9,7 +9,7 @@ export default function AboutPage() {
   return (
     <LegalPage title="About">
       <p>
-        Ground Truth is a concept prototype by {SITE.author}, made for Flexiple&apos;s product internship assignment. The brief asked how a
+        Ground Truth is a concept prototype by {SITE.author}, made for a product internship assignment. The brief asked how a
         single source of truth for India&apos;s Global Capability Centre ecosystem might work. This is one answer: start with the company
         deciding where and how to build, and show it evidence instead of opinions.
       </p>
@@ -17,7 +17,7 @@ export default function AboutPage() {
       <ul>
         <li>Operator: {SITE.author}, an individual. Not a registered company.</li>
         <li>Status: non-commercial prototype. No products or services are sold here.</li>
-        <li>Affiliation: none. Flexiple is the intended audience for the concept, not its owner or sponsor.</li>
+        <li>Affiliation: none. Companies named on this site, including Flexiple, do not own, sponsor or endorse it.</li>
         <li>Contact: <Contact />.</li>
       </ul>
       <h2>Images and data</h2>

@@ -228,7 +228,7 @@ export default function Home() {
           {[
             { t: "Sourced, not summarised", d: "AI extracts each fact with the exact sentence it came from. Code checks that sentence exists in the source before anything is shown." },
             { t: "Disagreements shown", d: "When reports disagree, you see every number and why they differ, instead of one confident average." },
-            { t: "Honest about its maker", d: "The concept is pitched to a company that sells GCC services. The brief says so, and tells you when that service is the wrong choice." },
+            { t: "Honest about vendors", d: "One setup model compared is sold by Flexiple, whose public data the prototype uses. The brief says so, and tells you when that model is the wrong choice." },
           ].map((x) => (
             <div key={x.t}>
               <h3 className="text-[22px] font-semibold tracking-[-0.02em]">{x.t}</h3>
